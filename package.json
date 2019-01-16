@@ -1,0 +1,23 @@
+{
+  "name": "posts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./index.html --out-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crmsoft/gpost.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crmsoft/gpost/issues"
+  },
+  "homepage": "https://github.com/crmsoft/gpost#readme",
+  "devDependencies": {
+    "sass": "^1.16.0"
+  }
+}
