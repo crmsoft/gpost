@@ -1,0 +1,249 @@
+@import "variable.scss";
+
+.comments{
+
+.comment-section
+{
+  float: left;
+  width:100%;
+  @include margin-function( $m1rem,0,$m1rem,0);
+  .all-comments
+  {
+    width: 100%;
+    text-align: center;
+    a
+    {
+      display: inline-block;
+      color:$orangecolor;
+      text-decoration: none;
+    }
+  }
+  .first-comment
+  {
+    color:$whitecolor;
+    strong
+    {
+      font-weight: 600;
+    }
+    .comment-hour
+    {
+      color:$orangecolor;
+    }
+    .comment-dot
+    {
+      color:$texticoncolor;
+    }
+    .comment-like-section
+    {
+      span
+      {
+        float: left;
+        margin:0px 5px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color:$whitecolor;
+        cursor:pointer;
+        font-weight: 600;
+      }
+      span.fa
+      {
+        float: left;
+        color:$orangecolor;
+        font-size: 20px;
+        cursor:pointer;
+        font-weight: 100;
+      }
+    }
+  }
+  .comments-box
+  {
+    color:$whitecolor;
+    .mleft61
+    {
+      margin-left: 61px;
+    }
+    strong
+    {
+      font-weight: 600;
+      @include margin-function( 0,$m05rem,0,0);
+    }
+    .comment-hour
+    {
+      color:$orangecolor;
+    }
+    .comment-dot
+    {
+      color:$texticoncolor;
+    }
+    .comment-like-section
+    {
+      span
+      {
+        float: left;
+        margin:0px 5px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color:$whitecolor;
+        cursor:pointer;
+        font-weight: 600;
+      }
+      span.fa
+      {
+        float: left;
+        color:$orangecolor;
+        font-size: 20px;
+        cursor:pointer;
+        font-weight: 100;
+      }
+    }
+    img.comment-img-big
+    {
+      max-width: 100%;
+      border:1px solid $orangecolor;
+      @include margin-function( 0,0,$m05rem,0);
+    }
+
+  }
+
+  .comment-img
+  {
+    float: left;
+    img
+    {
+      height: 45px;
+      width: 45px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      border:1px solid $orangecolor;
+    }
+  }
+  .comment-text
+  {
+    float: left;
+    width:100%;
+    input[type=text]
+    {
+      background: $posttextcolor;
+      border:0px !important;
+      -webkit-border-top-left-radius: 5px;
+      -moz-border-top-left-radius: 5px;
+      border-top-left-radius: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+      -moz-border-bottom-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      height: 45px;
+      line-height: 45px;
+      @include padding-function( 0,$p2rem,0,$p2rem);
+      color:$texticoncolor;
+    }
+    input[type=text]::placeholder
+    {
+      color:$texticoncolor;
+    }
+
+
+    button
+    {
+      border:0px;
+      background: $posttextcolor;
+      color:$texticoncolor;
+    }
+    button:last-child
+    {
+      @include padding-function( 0,$p2rem,0,0);
+      -webkit-border-bottom-right-radius: 5px;
+      -moz-border-bottom-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-top-right-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    button.added-photo
+    {
+      color: $orangecolor;
+    }
+    .comment-photo
+    {
+      label
+      {
+        margin:0px;
+        content:'';
+      }
+
+      input[type=file]
+      {
+        position: absolute !important;
+      }
+    }
+
+
+    .comment-media
+    {
+      background: $posttextcolor;
+      padding: 0.5rem 2rem;
+      @include padding-function( $p05rem,$p2rem,$p05rem,$p2rem);
+      -webkit-border-bottom-right-radius: 5px;
+      -moz-border-bottom-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      -webkit-border-bottom-left-radius: 5px;
+      -moz-border-bottom-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      position: relative;
+
+      .media-img:hover .img-hover
+      {
+        display: block;
+        border:1px solid $orangecolor;
+      }
+      .media-img
+      {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        .img-hover
+        {
+          position: absolute;
+          height: 100%;
+          text-align:center ;
+          width: 100%;
+          background: $imghovercolor;
+          z-index: 12;
+          display: none;
+          .img-center
+          {
+            position: relative;
+            height: 100%;
+            width:100%;
+
+          }
+          img
+          {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: 18px;
+            vertical-align: middle;
+            width: 18px;
+          }
+        }
+        img
+        {
+          max-height: 50px;
+        }
+      }
+
+    }
+
+
+
+  }
+
+}
+
+}

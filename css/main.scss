@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url(post.css);
+@import "post.scss";
+@import "comments.scss";
 body{
   font-family: 'Roboto', sans-serif;
 

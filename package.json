@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ./index.html --out-dir ./dist"
+    "start": "parcel ./index.html --out-dir ./dist",
+    "share": "parcel ./shared.html --out-dir ./dist1"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,6 @@
   },
   "homepage": "https://github.com/crmsoft/gpost#readme",
   "devDependencies": {
-    "sass": "^1.16.0"
+    "sass": "^1.16.1"
   }
 }

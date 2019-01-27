@@ -1,0 +1,47 @@
+//colors
+$postcolor:#14191C;
+$posttextcolor:#293235;
+$orangecolor:#FF4800;
+$whitecolor:#fff;
+$texticoncolor:#CBCBCB;
+$imghovercolor:#8080807a;
+$sharedbordercolor:#354247;
+
+//methods
+$p05rem:0.5rem;
+$p1rem:1rem;
+$p2rem:2rem;
+$p3rem:3rem;
+
+@mixin padding-function($ptop,$pright,$pbottom,$pleft)
+{
+  padding-top:$ptop;
+  padding-right:$pright;
+  padding-bottom:$pbottom;
+  padding-left:$pleft;
+
+}
+
+$m05rem:0.5rem;
+$m1rem:1rem;
+$m2rem:2rem;
+$m3rem:3rem;
+
+@mixin margin-function($mtop,$mright,$mbottom,$mleft)
+{
+  margin-top:$mtop;
+  margin-right:$mright;
+  margin-bottom:$mbottom;
+  margin-left:$mleft;
+
+}
+
+.postblockpadding05{
+  @include padding-function($p05rem,$p05rem,$p05rem,$p05rem);
+}
+.pleft05{
+  @include padding-function(0,0,0,$p05rem);
+}
+.pright05{
+  @include padding-function(0,$p05rem,0,0);
+}
