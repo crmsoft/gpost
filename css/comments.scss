@@ -2,11 +2,10 @@
 
 .comments{
 
-.comment-section
-{
   float: left;
   width:100%;
   @include margin-function( $m1rem,0,$m1rem,0);
+
   .all-comments
   {
     width: 100%;
@@ -18,93 +17,72 @@
       text-decoration: none;
     }
   }
-  .first-comment
+
+  .comment
   {
+    display: flex;
     color:$whitecolor;
-    strong
-    {
-      font-weight: 600;
-    }
-    .comment-hour
-    {
-      color:$orangecolor;
-    }
-    .comment-dot
-    {
-      color:$texticoncolor;
-    }
-    .comment-like-section
-    {
-      span
-      {
-        float: left;
-        margin:0px 5px;
-        height: 20px;
-        line-height: 20px;
-        font-size: 12px;
-        color:$whitecolor;
-        cursor:pointer;
-        font-weight: 600;
-      }
-      span.fa
-      {
-        float: left;
-        color:$orangecolor;
-        font-size: 20px;
-        cursor:pointer;
-        font-weight: 100;
-      }
-    }
-  }
-  .comments-box
-  {
-    color:$whitecolor;
-    .mleft61
-    {
-      margin-left: 61px;
-    }
-    strong
-    {
-      font-weight: 600;
-      @include margin-function( 0,$m05rem,0,0);
-    }
-    .comment-hour
-    {
-      color:$orangecolor;
-    }
-    .comment-dot
-    {
-      color:$texticoncolor;
-    }
-    .comment-like-section
-    {
-      span
-      {
-        float: left;
-        margin:0px 5px;
-        height: 20px;
-        line-height: 20px;
-        font-size: 12px;
-        color:$whitecolor;
-        cursor:pointer;
-        font-weight: 600;
-      }
-      span.fa
-      {
-        float: left;
-        color:$orangecolor;
-        font-size: 20px;
-        cursor:pointer;
-        font-weight: 100;
-      }
-    }
-    img.comment-img-big
-    {
-      max-width: 100%;
-      border:1px solid $orangecolor;
-      @include margin-function( 0,0,$m05rem,0);
+    margin-bottom: $commentBottom;
+    
+    &.reply{
+      margin-left: 50px;
     }
 
+    >div{
+      margin: $commentMargin;
+    }
+
+    .comment-user{
+      flex-shrink: 1;
+    }
+
+    .comment-body{
+      width: 100%;
+      
+      strong
+      {
+        font-weight: 600;
+        padding-right: 5px;
+      }
+
+      img{
+        max-width: 100%;
+      }
+
+      p{
+        margin-bottom: 5px;
+      }
+    }
+    .comment-time
+    {
+      color:$orangecolor;
+    }
+    .comment-dot
+    {
+      color:$texticoncolor;
+    }
+    .comment-actions
+    {
+      span
+      {
+        float: left;
+        margin-right: 5px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color:$whitecolor;
+        cursor:pointer;
+        font-weight: 600;
+      }
+      span.fa
+      {
+        float: left;
+        color:$orangecolor;
+        font-size: 20px;
+        cursor:pointer;
+        font-weight: 100;
+      }
+    }
   }
 
   .comment-img
@@ -240,10 +218,6 @@
 
     }
 
-
-
   }
-
-}
 
 }
