@@ -8,7 +8,6 @@
 
 .posts
 {
-  background: $postcolor;
   float: left;
   width: 100%;
   position: relative;
@@ -30,6 +29,10 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+
+  +.post{
+    margin-top: 15px;
+  }
 
   .post-header
   {
