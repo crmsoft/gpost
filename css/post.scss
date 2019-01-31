@@ -4,13 +4,28 @@
 {
   display: none !important;
 }
+
+
 .posts
+{
+  background: $postcolor;
+  float: left;
+  width: 100%;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+}
+
+
+
+.post
 {
   float: left;
   width: 100%;
   position: relative;
   background: $postcolor;
-  margin:10px;
   @include padding-function( $p2rem,$p3rem,$p2rem,$p3rem);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

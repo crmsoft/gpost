@@ -25,11 +25,20 @@
 }
 
 .posts {
+  background: #14191C;
+  float: left;
+  width: 100%;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.post {
   float: left;
   width: 100%;
   position: relative;
   background: #14191C;
-  margin: 10px;
   padding-top: 2rem;
   padding-right: 3rem;
   padding-bottom: 2rem;
@@ -38,13 +47,13 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-.posts .post-header {
+.post .post-header {
   float: left;
   width: 100%;
   position: relative;
   color: #fff;
 }
-.posts .post-header img {
+.post .post-header img {
   float: left;
   height: 75px;
   width: 75px;
@@ -57,7 +66,7 @@
   margin-bottom: 0;
   margin-left: 0;
 }
-.posts .post-header h3 {
+.post .post-header h3 {
   float: left;
   height: 30px;
   line-height: 30px;
@@ -66,7 +75,7 @@
   display: inline-block;
   font-size: 19px;
 }
-.posts .post-header h4 {
+.post .post-header h4 {
   float: left;
   height: 30px;
   line-height: 30px;
@@ -75,7 +84,7 @@
   display: inline-block;
   font-size: 19px;
 }
-.posts .post-header span {
+.post .post-header span {
   float: left;
   height: 16px;
   line-height: 16px;
@@ -84,7 +93,7 @@
   font-size: 12px;
   color: #FF4800;
 }
-.posts .post-header .right-post-menu {
+.post .post-header .right-post-menu {
   position: absolute;
   top: 0;
   height: 30px;
@@ -94,11 +103,11 @@
   bottom: 0;
   cursor: pointer;
 }
-.posts .post-header .right-post-menu i {
+.post .post-header .right-post-menu i {
   font-size: 2rem;
   color: #CBCBCB;
 }
-.posts .post-header .right-post-menu span {
+.post .post-header .right-post-menu span {
   height: 6px;
   margin: 0px 2px;
   width: 6px;
@@ -107,7 +116,7 @@
   -moz-border-radius: 100%;
   border-radius: 100%;
 }
-.posts .post-content {
+.post .post-content {
   float: left;
   width: 100%;
   margin-top: 1rem;
@@ -115,16 +124,16 @@
   margin-bottom: 1rem;
   margin-left: 0;
 }
-.posts .post-content .comment-shared {
+.post .post-content .comment-shared {
   border: 1px solid #354247;
 }
-.posts .post-content .comment-shared .post-header {
+.post .post-content .comment-shared .post-header {
   padding-top: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
 }
-.posts .post-content .comment-shared .post-header .right-shared-menu {
+.post .post-content .comment-shared .post-header .right-shared-menu {
   right: 2rem;
   position: absolute;
   top: 1rem;
@@ -139,31 +148,31 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.posts .post-content .comment-shared .post-header .right-shared-menu .right-shared-btn i {
+.post .post-content .comment-shared .post-header .right-shared-menu .right-shared-btn i {
   color: #FF4800;
 }
-.posts .post-content .comment-shared .post-content p {
+.post .post-content .comment-shared .post-content p {
   padding-top: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
 }
-.posts .post-content .comment-shared .post-content {
+.post .post-content .comment-shared .post-content {
   margin: 0px;
 }
-.posts .post-content p {
+.post .post-content p {
   color: #fff;
 }
-.posts .post-content a {
+.post .post-content a {
   color: #FF4800;
   margin: 0px 15px;
   font-weight: 500;
 }
-.posts .post-content .post-img {
+.post .post-content .post-img {
   float: left;
   width: 100%;
 }
-.posts .post-content .post-like-section {
+.post .post-content .post-like-section {
   float: left;
   width: 100%;
   border-bottom: 2px solid #293235;
@@ -172,7 +181,7 @@
   padding-bottom: 1rem;
   padding-left: 0.5rem;
 }
-.posts .post-content .post-like-section span {
+.post .post-content .post-like-section span {
   float: left;
   margin: 0px 5px;
   height: 25px;
@@ -182,7 +191,7 @@
   cursor: pointer;
   font-weight: 600;
 }
-.posts .post-content .post-like-section span.fa {
+.post .post-content .post-like-section span.fa {
   float: left;
   color: #FF4800;
   font-size: 20px;
@@ -211,100 +220,86 @@
   padding-left: 0;
 }
 
-.comments .comment-section {
+.comments {
   float: left;
   width: 100%;
+  position: relative;
+  background: #14191C;
+  padding-top: 2rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   margin-top: 1rem;
   margin-right: 0;
   margin-bottom: 1rem;
   margin-left: 0;
 }
-.comments .comment-section .all-comments {
+.comments .all-comments {
   width: 100%;
   text-align: center;
 }
-.comments .comment-section .all-comments a {
+.comments .all-comments a {
   display: inline-block;
   color: #FF4800;
   text-decoration: none;
 }
-.comments .comment-section .first-comment {
+.comments .comment {
+  display: flex;
   color: #fff;
+  margin-bottom: 15px;
 }
-.comments .comment-section .first-comment strong {
+.comments .comment.reply {
+  margin-left: 50px;
+}
+.comments .comment > div {
+  margin: 4.5px;
+}
+.comments .comment .comment-user {
+  flex-shrink: 1;
+}
+.comments .comment .comment-body {
+  width: 100%;
+}
+.comments .comment .comment-body strong {
   font-weight: 600;
+  padding-right: 5px;
 }
-.comments .comment-section .first-comment .comment-hour {
-  color: #FF4800;
-}
-.comments .comment-section .first-comment .comment-dot {
-  color: #CBCBCB;
-}
-.comments .comment-section .first-comment .comment-like-section span {
-  float: left;
-  margin: 0px 5px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 12px;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-}
-.comments .comment-section .first-comment .comment-like-section span.fa {
-  float: left;
-  color: #FF4800;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 100;
-}
-.comments .comment-section .comments-box {
-  color: #fff;
-}
-.comments .comment-section .comments-box .mleft61 {
-  margin-left: 61px;
-}
-.comments .comment-section .comments-box strong {
-  font-weight: 600;
-  margin-top: 0;
-  margin-right: 0.5rem;
-  margin-bottom: 0;
-  margin-left: 0;
-}
-.comments .comment-section .comments-box .comment-hour {
-  color: #FF4800;
-}
-.comments .comment-section .comments-box .comment-dot {
-  color: #CBCBCB;
-}
-.comments .comment-section .comments-box .comment-like-section span {
-  float: left;
-  margin: 0px 5px;
-  height: 20px;
-  line-height: 20px;
-  font-size: 12px;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
-}
-.comments .comment-section .comments-box .comment-like-section span.fa {
-  float: left;
-  color: #FF4800;
-  font-size: 20px;
-  cursor: pointer;
-  font-weight: 100;
-}
-.comments .comment-section .comments-box img.comment-img-big {
+.comments .comment .comment-body img {
   max-width: 100%;
-  border: 1px solid #FF4800;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0.5rem;
-  margin-left: 0;
 }
-.comments .comment-section .comment-img {
+.comments .comment .comment-body p {
+  margin-bottom: 5px;
+}
+.comments .comment .comment-time {
+  color: #FF4800;
+}
+.comments .comment .comment-dot {
+  color: #CBCBCB;
+}
+.comments .comment .comment-actions span {
+  float: left;
+  margin-right: 5px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.comments .comment .comment-actions span.fa {
+  float: left;
+  color: #FF4800;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 100;
+}
+.comments .comment-img {
   float: left;
 }
-.comments .comment-section .comment-img img {
+.comments .comment-img img {
   height: 45px;
   width: 45px;
   -webkit-border-radius: 100%;
@@ -312,11 +307,11 @@
   border-radius: 100%;
   border: 1px solid #FF4800;
 }
-.comments .comment-section .comment-text {
+.comments .comment-text {
   float: left;
   width: 100%;
 }
-.comments .comment-section .comment-text input[type=text] {
+.comments .comment-text input[type=text] {
   background: #293235;
   border: 0px !important;
   -webkit-border-top-left-radius: 5px;
@@ -333,15 +328,15 @@
   padding-left: 2rem;
   color: #CBCBCB;
 }
-.comments .comment-section .comment-text input[type=text]::placeholder {
+.comments .comment-text input[type=text]::placeholder {
   color: #CBCBCB;
 }
-.comments .comment-section .comment-text button {
+.comments .comment-text button {
   border: 0px;
   background: #293235;
   color: #CBCBCB;
 }
-.comments .comment-section .comment-text button:last-child {
+.comments .comment-text button:last-child {
   padding-top: 0;
   padding-right: 2rem;
   padding-bottom: 0;
@@ -353,17 +348,17 @@
   -moz-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-.comments .comment-section .comment-text button.added-photo {
+.comments .comment-text button.added-photo {
   color: #FF4800;
 }
-.comments .comment-section .comment-text .comment-photo label {
+.comments .comment-text .comment-photo label {
   margin: 0px;
   content: "";
 }
-.comments .comment-section .comment-text .comment-photo input[type=file] {
+.comments .comment-text .comment-photo input[type=file] {
   position: absolute !important;
 }
-.comments .comment-section .comment-text .comment-media {
+.comments .comment-text .comment-media {
   background: #293235;
   padding: 0.5rem 2rem;
   padding-top: 0.5rem;
@@ -378,16 +373,16 @@
   border-bottom-left-radius: 5px;
   position: relative;
 }
-.comments .comment-section .comment-text .comment-media .media-img:hover .img-hover {
+.comments .comment-text .comment-media .media-img:hover .img-hover {
   display: block;
   border: 1px solid #FF4800;
 }
-.comments .comment-section .comment-text .comment-media .media-img {
+.comments .comment-text .comment-media .media-img {
   position: relative;
   display: inline-block;
   text-align: center;
 }
-.comments .comment-section .comment-text .comment-media .media-img .img-hover {
+.comments .comment-text .comment-media .media-img .img-hover {
   position: absolute;
   height: 100%;
   text-align: center;
@@ -396,12 +391,12 @@
   z-index: 12;
   display: none;
 }
-.comments .comment-section .comment-text .comment-media .media-img .img-hover .img-center {
+.comments .comment-text .comment-media .media-img .img-hover .img-center {
   position: relative;
   height: 100%;
   width: 100%;
 }
-.comments .comment-section .comment-text .comment-media .media-img .img-hover img {
+.comments .comment-text .comment-media .media-img .img-hover img {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -412,7 +407,7 @@
   vertical-align: middle;
   width: 18px;
 }
-.comments .comment-section .comment-text .comment-media .media-img img {
+.comments .comment-text .comment-media .media-img img {
   max-height: 50px;
 }
 
