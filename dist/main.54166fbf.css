@@ -25,7 +25,6 @@
 }
 
 .posts {
-  background: #14191C;
   float: left;
   width: 100%;
   position: relative;
@@ -46,6 +45,9 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+}
+.post + .post {
+  margin-top: 15px;
 }
 .post .post-header {
   float: left;
@@ -123,6 +125,91 @@
   margin-right: 0;
   margin-bottom: 1rem;
   margin-left: 0;
+}
+.post .post-content .post-media {
+  max-height: 750px;
+}
+.post .post-content .post-media.n-2 {
+  display: flex;
+  flex-direction: row;
+}
+.post .post-content .post-media.n-2 .media:first-child {
+  padding-right: 5px;
+}
+.post .post-content .post-media.n-2 .media + .media {
+  padding-left: 5px;
+}
+.post .post-content .post-media.n-3 .media:first-child {
+  padding-bottom: 10px;
+}
+.post .post-content .post-media.n-3 .media:nth-child(2) {
+  display: inline-block;
+  padding-right: 5px;
+  float: left;
+  width: 50%;
+}
+.post .post-content .post-media.n-3 .media:nth-child(3) {
+  display: inline-block;
+  padding-left: 5px;
+  float: left;
+  width: 50%;
+}
+.post .post-content .post-media.n-4 .media:nth-child(1) {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  float: left;
+  width: 50%;
+}
+.post .post-content .post-media.n-4 .media:nth-child(2) {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  float: left;
+  width: 50%;
+}
+.post .post-content .post-media.n-4 .media:nth-child(3) {
+  display: inline-block;
+  padding-right: 5px;
+  float: left;
+  width: 50%;
+}
+.post .post-content .post-media.n-4 .media:nth-child(4) {
+  display: inline-block;
+  padding-left: 5px;
+  float: left;
+  width: 50%;
+}
+.post .post-content .post-media.n-5 .media:nth-child(1) {
+  padding-bottom: 10px;
+  float: left;
+  width: 50%;
+  padding-right: 5px;
+}
+.post .post-content .post-media.n-5 .media:nth-child(2) {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  float: left;
+  width: 50%;
+}
+.post .post-content .post-media.n-5 .media:nth-child(3) {
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-right: 6.66px;
+  float: left;
+  width: 33.333%;
+}
+.post .post-content .post-media.n-5 .media:nth-child(4) {
+  display: inline-block;
+  padding: 0px 3.66px;
+  float: left;
+  width: 33.333%;
+}
+.post .post-content .post-media.n-5 .media:nth-child(5) {
+  display: inline-block;
+  padding-left: 6.66px;
+  float: left;
+  width: 33.333%;
 }
 .post .post-content .comment-shared {
   border: 1px solid #354247;
@@ -226,9 +313,6 @@
   position: relative;
   background: #14191C;
   padding-top: 2rem;
-  padding-right: 3rem;
-  padding-bottom: 2rem;
-  padding-left: 3rem;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;

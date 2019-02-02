@@ -112,6 +112,138 @@
     float: left;
     width:100%;
     @include margin-function( $m1rem,0,$m1rem,0);
+    .post-media
+    {
+
+      max-height:750px ;
+
+      &.n-2
+      {
+        display:flex;
+        flex-direction: row;
+
+        .media
+        {
+          &:first-child
+          {
+            padding-right:5px;
+          }
+          +.media{
+            padding-left:5px;
+          }
+        }
+      }
+      &.n-3
+      {
+
+      .media
+      {
+        &:first-child
+        {
+          padding-bottom:10px;
+        }
+        &:nth-child(2)
+        {
+          display: inline-block;
+          padding-right:5px;
+          float: left;
+          width:50%;
+        }
+        &:nth-child(3)
+        {
+          display: inline-block;
+          padding-left:5px;
+          float: left;
+          width:50%;
+        }
+      }
+      }
+
+      &.n-4
+      {
+
+        .media
+        {
+          &:nth-child(1)
+          {
+            display: inline-block;
+            padding-bottom:10px;
+            padding-right:5px;
+            float: left;
+            width:50%;
+          }
+          &:nth-child(2)
+          {
+            display: inline-block;
+            padding-bottom:10px;
+            padding-left:5px;
+            float: left;
+            width:50%;
+          }
+          &:nth-child(3)
+          {
+            display: inline-block;
+            padding-right:5px;
+            float: left;
+            width:50%;
+          }
+          &:nth-child(4)
+          {
+            display: inline-block;
+            padding-left:5px;
+            float: left;
+            width:50%;
+          }
+        }
+      }
+
+      &.n-5
+      {
+
+        .media
+        {
+          &:nth-child(1)
+          {
+            padding-bottom:10px;
+            float: left;
+            width:50%;
+            padding-right:5px;
+          }
+          &:nth-child(2)
+          {
+            padding-bottom:10px;
+            padding-left:5px;
+            float: left;
+            width:50%;
+          }
+          &:nth-child(3)
+          {
+            display: inline-block;
+            padding-bottom:10px;
+            padding-right:6.66px;
+            float: left;
+            width:33.333%;
+          }
+          &:nth-child(4)
+          {
+            display: inline-block;
+            padding:0px 3.66px;
+            float: left;
+            width:33.333%;
+          }
+          &:nth-child(5)
+          {
+            display: inline-block;
+            padding-left:6.66px;
+            float: left;
+            width:33.333%;
+          }
+        }
+      }
+
+    }
+
+
     .comment-shared
     {
       border:1px solid $sharedbordercolor;
@@ -146,6 +278,8 @@
       {
         @include padding-function( $p1rem,$p1rem,$p1rem,$p1rem);
       }
+
+
       .post-content
       {
         margin:0px;
